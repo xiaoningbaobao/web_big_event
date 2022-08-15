@@ -4,7 +4,7 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background: url('/assets/images/login_bg.jpg') no-repeat center;
+  background: url('../images/login_bg.jpg') no-repeat center; /*不需要平铺并且居中*/
   background-size: cover;
 }
 
@@ -13,14 +13,14 @@ body {
   height: 310px;
   background-color: #fff;
   position: absolute;
-  left: 50%;
+  left: 50%;  /*页面的正中间*/
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
 .title-box {
   height: 60px;
-  background: url('/assets/images/login_title.png') no-repeat center;
+  background: url('../images/login_title.png') no-repeat center;
 }
 
 .reg-box {
@@ -32,7 +32,8 @@ body {
 }
 
 .links {
-  display: flex;
+  /* 弹性布局 */
+  display: flex;   
   justify-content: flex-end;
 }
 
@@ -50,6 +51,6 @@ body {
   top: 10px;
 }
 
-.layui-input {
+.layui-form-item .layui-input {
   padding-left: 32px;
 }
